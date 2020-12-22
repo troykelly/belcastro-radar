@@ -124,6 +124,10 @@
           [-31.155811, 136.804400],
           [-18.228916, 127.662836],
           [-29.971116, 146.813845]];
+
+        const offsetWidth = (window.frameElement && window.frameElement.offsetWidth)?window.frameElement.offsetWidth:window.innerWidth;
+        const offsetHeight = (window.frameElement && window.frameElement.offsetHeight)?window.frameElement.offsetHeight:window.innerHeight;
+
         const maxZoom = 10;
         const minZoom = 4;
         var zoomLevel = getParameterByName("zoom_level") || 4;
@@ -133,7 +137,7 @@
         var markerLon = getParameterByName("marker_longitude") || centerLon;
         var timeout = getParameterByName("frame_delay") || 500;
         var frameCount = getParameterByName("frame_count") || 10;
-        var barSize = window.frameElement.offsetWidth/frameCount;
+        var barSize = offsetWidth/frameCount;
         var labelSize = getParameterByName("frame_count") ? 128 : 256;
         var labelZoom = getParameterByName("frame_count") ? 1 : 0;
         var locationRadius = getParameterByName("radar_location_radius") || 2;
@@ -474,11 +478,11 @@
           }
         }
         function resizeWindow() {
-          this.document.getElementById("color-bar").width = window.frameElement.offsetWidth;
-          this.document.getElementById("img-color-bar").width = window.frameElement.offsetWidth;
-          this.document.getElementById("mapid").width = window.frameElement.offsetWidth;
-          this.document.getElementById("div-progress-bar").width = window.frameElement.offsetWidth;
-          this.document.getElementById("bottom-container").width = window.frameElement.offsetWidth;
+          this.document.getElementById("color-bar").width = offsetWidth;
+          this.document.getElementById("img-color-bar").width = offsetWidth;
+          this.document.getElementById("mapid").width = offsetWidth;
+          this.document.getElementById("div-progress-bar").width = offsetWidth;
+          this.document.getElementById("bottom-container").width = offsetWidth;
         }
       </script>
     </span>
