@@ -133,7 +133,7 @@
         var markerLon = getParameterByName("marker_longitude") || centerLon;
         var timeout = getParameterByName("frame_delay") || 500;
         var frameCount = getParameterByName("frame_count") || 10;
-        var barSize = this.frameElement.offsetWidth/frameCount;
+        var barSize = Window.frameElement.offsetWidth/frameCount;
         var labelSize = getParameterByName("frame_count") ? 128 : 256;
         var labelZoom = getParameterByName("frame_count") ? 1 : 0;
         var locationRadius = getParameterByName("radar_location_radius") || 2;
@@ -474,11 +474,11 @@
           }
         }
         function resizeWindow() {
-        //   this.document.getElementById("color-bar").width = this.frameElement.offsetWidth;
-        //   this.document.getElementById("img-color-bar").width = this.frameElement.offsetWidth;
-        //   this.document.getElementById("mapid").width = this.frameElement.offsetWidth;
-        //   this.document.getElementById("div-progress-bar").width = this.frameElement.offsetWidth;
-        //   this.document.getElementById("bottom-container").width = this.frameElement.offsetWidth;
+          this.document.getElementById("color-bar").width = Window.frameElement.offsetWidth;
+          this.document.getElementById("img-color-bar").width = Window.frameElement.offsetWidth;
+          this.document.getElementById("mapid").width = Window.frameElement.offsetWidth;
+          this.document.getElementById("div-progress-bar").width = Window.frameElement.offsetWidth;
+          this.document.getElementById("bottom-container").width = Window.frameElement.offsetWidth;
         }
       </script>
     </span>
