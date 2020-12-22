@@ -61,7 +61,7 @@ const radarLocations = [
   ];
   
   function goRadar() {
-      alert("goRadar");
+    alert("goRadar");
     let basemap_url;
     let basemap_style;
     let label_url;
@@ -565,8 +565,11 @@ const radarLocations = [
     resizeWindow();
   }
   
-//   document.addEventListener("DOMContentLoaded", () => {
-//       alert("Starting");
-//     goRadar();
-//   });
+  function yellRadar() {
+    alert("This is where I am. I am here. And this is where here is.");
+  }
+  //   document.addEventListener("DOMContentLoaded", () => {
+  //       alert("Starting");
+  //     goRadar();
+  //   });
   
