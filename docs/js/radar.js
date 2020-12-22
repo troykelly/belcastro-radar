@@ -61,7 +61,6 @@ const radarLocations = [
   ];
   
   function goRadar() {
-    alert("goRadar. It is a go. Radar!");
     let basemap_url;
     let basemap_style;
     let label_url;
@@ -188,6 +187,7 @@ const radarLocations = [
     );
   
     let zoomConfig;
+    alert("zoomConfig. It is a go. zoomConfig!");
   
     if (static_map) {
       zoomConfig = {
