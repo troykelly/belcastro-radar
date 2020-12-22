@@ -562,7 +562,6 @@ const radarLocations = [
     }
   
     resizeWindow();
-    alert("Ready to go!");
   }
   
 //   document.addEventListener("DOMContentLoaded", () => {
