@@ -187,7 +187,6 @@ const radarLocations = [
     );
   
     let zoomConfig;
-    alert("zoomConfig. It is a go. zoomConfig!");
   
     if (static_map) {
       zoomConfig = {
