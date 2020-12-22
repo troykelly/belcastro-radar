@@ -61,6 +61,7 @@ const radarLocations = [
   ];
   
   function goRadar() {
+      alert("goRadar");
     let basemap_url;
     let basemap_style;
     let label_url;
