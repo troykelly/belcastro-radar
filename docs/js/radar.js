@@ -566,6 +566,7 @@ const radarLocations = [
   }
   
   document.addEventListener("DOMContentLoaded", () => {
+      alert("Starting");
     goRadar();
   });
   
